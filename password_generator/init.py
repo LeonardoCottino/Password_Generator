@@ -1,3 +1,6 @@
 from generator import *
+from password_generator.strength import evaluate_strength
 
-print(generate_password())
+psw = generate_password()
+print(psw)
+print(evaluate_strength(psw))
