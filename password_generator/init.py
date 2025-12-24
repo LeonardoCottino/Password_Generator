@@ -1,6 +1,4 @@
-from generator import *
-from password_generator.strength import evaluate_strength
+from password_generator.cli import main
 
-psw = generate_password()
-print(psw)
-print(evaluate_strength(psw))
+if __name__ == "__main__":
+    main()
